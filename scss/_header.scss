@@ -40,7 +40,7 @@ header {
           a {
             &:hover {
               background: transparent;
-              color: #fff;
+              color: $bg-light-color;
               text-decoration: none;
               -webkit-transition:0.3s all ease;
               transition:0.3s ease all;          
@@ -51,20 +51,20 @@ header {
           }
         }  
         a {
-          color: #fff;
+          color: $a-light-color;
           padding: 0 22px;
           display: block;
           line-height: 97px;
           text-transform: capitalize;
           &.active {
-            background: #3a9ac8;
-            color: #fff;
+            background: $bg-secondary-color;
+            color: $bg-light-color;
             text-decoration: none;
             border-right: 1px solid #000;
           }
           &:hover {
-            background: #3a9ac8;
-            color: #fff;
+            background: $bg-secondary-color;
+            color: $bg-light-color;
             text-decoration: none;
             -webkit-transition:0.3s all ease;
             transition:0.3s ease all;          
@@ -108,7 +108,7 @@ header {
       background: #fff !important;
     } 
     .close-button {
-      color: #fff;
+      color: $button-light-color;
       background: #6cb4d6;
       padding: 5px 12px;
       border-radius: 50%;
@@ -125,7 +125,7 @@ header {
           font-weight: 500;
           text-align: left;
           &:hover {
-            color: #3a9ac8;
+            color: $a-secondary-color;
             background: transparent;
             text-decoration: none;
             -webkit-transition:0.3s all ease;
@@ -135,7 +135,7 @@ header {
         &:last-child {
           a {
             &:hover {
-              color: #3a9ac8;
+              color: $a-secondary-color;
               text-decoration: none;
               -webkit-transition:0.3s all ease;
               transition:0.3s ease all;          
@@ -193,12 +193,12 @@ header {
     border: 2px solid #fff;
     border-radius: 50% !important;
     padding: 1px 7px;
-    color: #fff !important;  
+    color: $button-light-color !important;  
     &:hover {
-      color: #fff !important;
+      color: $button-light-color !important;
     }
     &:focus {
-      color: #fff !important;
+      color: $button-light-color !important;
     }
   }  
 }

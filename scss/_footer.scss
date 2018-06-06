@@ -1,0 +1,184 @@
+#footer {
+  background: #242424;
+  color: #aaa;
+  font-weight: 300;
+  font-size: 15px;  
+  .quick-contact {
+    padding: 50px 0;
+    background: $bg-secondary-color;
+  }
+  .footer-cols {
+    padding: 45px 0 35px;
+    .hr-primary {
+      color: #fff;
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      letter-spacing: 0.01em;
+      position: relative;
+      &:after {
+        background: #3a9ac8 none repeat scroll 0 0;
+        content: "";
+        display: block;
+        height: 1px;
+        margin: 10px 0 0;
+        width: 40px;
+        bottom: -1px;
+        position: absolute;
+      }
+    }
+    .footer-nav-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        line-height: 1.8;
+        a {
+          color: #aaa;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+          }
+          &:before {
+            content: "\f105";
+            font-family: 'FontAwesome';
+            margin-right: 10px;
+            font-size: 1.1em;
+          }
+        }        
+      }      
+    }
+    .getintouch {
+      position: relative;
+      padding-left: 42px;
+      i {
+        font-size: 1.8em;
+        position: absolute;
+        left: 0;
+        top: -2px;
+        opacity: 0.85;
+      }
+      .country-code-text {
+        color:$span-secondary-color;
+        font-weight: bold;
+      }      
+      address {
+        margin: 0;
+      }
+      a {
+        color: #aaa;
+        &:hover {
+          color: $a-light-color;
+          text-decoration: none;
+        }
+      }
+      &~.getintouch {
+        margin-top: 20px;
+      }            
+    }
+    .footer-newsletter {
+      position: relative;
+      margin-bottom: 30px;
+      i {
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        font-size: 24px;
+      }
+      .newsletter-subscribe {
+        input {
+          border: 0;
+          color: #aaa;
+          background: rgba(255,255,255,0.08);
+          font-weight: 300;
+          padding-left: 50px;
+          padding-right: 135px;
+          height: 50px;
+          line-height: 1.55;
+          color: #fff;
+          width: 100%;
+          -moz-transition: border-color 200ms ease-in;
+          -webkit-transition: border-color 200ms ease-in;
+          transition: border-color 200ms ease-in;
+          border-radius: 5px;
+          text-overflow: ellipsis;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;      
+        }
+        .btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          text-transform: none;
+          font-size: 15px;
+          height: 50px;
+          padding-left: 18px;
+          padding-right: 18px;
+        } 
+      }                
+    }
+    .social-block {
+      span {
+        float: left;
+        margin: 7px 10px 0 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: $span-light-color;
+      }
+      .social-links {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          float: left;
+          margin-left: 10px;
+          &.fb {
+            a {
+              background: #3b5998;
+            }
+          }
+          &.tw {
+            a {
+              background: #26a6d1;
+            }
+          }
+          &.yt {
+            a {
+              background: #c4302b;
+            }
+          }
+          &.in {
+            a {
+              background: #0e76a8;
+            }
+          }
+          a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            display: block;
+            line-height: 44px;
+            background: #26a6d1;
+            color: #fff;
+            font-size: 22px;
+          }
+        }
+        &:after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+      }      
+    }
+    .copyright {
+      font-size: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0 0px 0px;
+      width: 100%;
+      margin: 0;
+    }                    
+  }  
+}
