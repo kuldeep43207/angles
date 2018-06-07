@@ -7,6 +7,9 @@ header {
 	right: 0;
 	background: rgba(0,0,0,0.5);
 	z-index: 2222;
+  &.header-bg {
+    background:  $bg-dark-color;
+  }
   .width-100 {
     max-width: 100rem !important;
   }
