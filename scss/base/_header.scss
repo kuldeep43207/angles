@@ -1,0 +1,80 @@
+/******************* Header Start **********************/
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 2222;
+  &.header-bg {
+    background:  $bg-dark-color;
+  }
+  .width-100 {
+    max-width: 100rem !important;
+  }
+  .logo {
+    display: table;
+    height: 85px;
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      a {
+        img {
+          max-height: 48px;
+        }
+      }
+    }     
+  }
+  .navigation-bar {
+    float: right;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      li {
+        float: left;
+        height: 90px;
+        @media only screen and (max-width: 639px) {
+          float: none;
+        }
+        &:last-child {
+          a {
+            &:hover {
+              background: transparent;
+              color: $bg-light-color;
+              text-decoration: none;
+              -webkit-transition:0.3s all ease;
+              transition:0.3s ease all;          
+            }
+            &:focus {
+              outline: 0;         
+            }                        
+          }
+        }  
+        a {
+          color: $a-light-color;
+          padding: 0 22px;
+          display: block;
+          line-height: 97px;
+          text-transform: capitalize;
+          &.active {
+            background: $bg-secondary-color;
+            color: $bg-light-color;
+            text-decoration: none;
+            border-right: 1px solid #000;
+          }
+          &:hover {
+            background: $bg-secondary-color;
+            color: $bg-light-color;
+            text-decoration: none;
+            -webkit-transition:0.3s all ease;
+            transition:0.3s ease all;          
+          }     
+        }
+      } 
+    }
+  }       
+}
+/******************* Header End **********************/

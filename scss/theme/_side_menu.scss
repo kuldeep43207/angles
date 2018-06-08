@@ -1,0 +1,88 @@
+/******************* Header Start **********************/
+header {
+  .header-side-navbar {
+    float: right;
+    height: 91px;
+    padding-top: 27px;
+    padding-left: 15px;    
+    @media only screen and (max-width: 1023px) {
+      padding-top: 23px;
+    }    
+    a {
+      font-size: 26px; 
+      position: relative;
+      left: -10px;
+      top: 5px; 
+      @media only screen and (max-width: 1023px) {
+        left: -30px;
+      }      
+    }
+    .header-search-open {
+      display: none;
+    }    
+  } 
+  .right-vertical-menus {
+    .button {
+      padding: 0.60em 0.70em;
+      border-radius: 50%;
+      i {
+        font-size: 1.4rem;
+      }          
+    }
+  }
+  .vertical-menus-right { 
+    &.off-canvas {
+      background: #fff !important;
+    } 
+    .close-button {
+      color: $button-light-color;
+      background: #6cb4d6;
+      padding: 5px 12px;
+      border-radius: 50%;
+    } 
+    ul {
+      width:100%;
+      li {
+        height:auto;
+        a {
+          line-height: 46px;
+          padding: 0.4rem 1rem !important;
+          font-size: 18px;
+          color: #737373;
+          font-weight: 500;
+          text-align: left;
+          &:hover {
+            color: $a-secondary-color;
+            background: transparent;
+            text-decoration: none;
+            -webkit-transition:0.3s all ease;
+            transition:0.3s ease all;          
+          }          
+        }
+        &:last-child {
+          a {
+            &:hover {
+              color: $a-secondary-color;
+              text-decoration: none;
+              -webkit-transition:0.3s all ease;
+              transition:0.3s ease all;          
+            }
+            &:focus {
+              outline: 0;         
+            }                        
+          }
+        }        
+
+      }
+    }
+    .logo-img {
+      width: 140px;
+      visibility: hidden;
+    }  
+  }        
+}
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+  border-color: #737373 transparent transparent;
+}
+
+/******************* Header End **********************/
